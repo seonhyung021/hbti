@@ -171,12 +171,15 @@ h1 {
   justify-content: center;
   gap: 60px; /* 햄찌들 사이 간격 */
   margin-top: 20px;
-  font-size: 14px;
 }
 
 .match-block {
   text-align: center;
 
+}
+.match-block h2 {
+  font-size: 16px;  /* 원하는 크기로 조절 */
+  margin-bottom: 8px;
 }
 
 .match-img {
