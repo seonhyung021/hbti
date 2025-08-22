@@ -170,7 +170,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 60px; /* 햄찌들 사이 간격 */
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .match-block {
