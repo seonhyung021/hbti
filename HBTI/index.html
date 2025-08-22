@@ -1,0 +1,103 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>햄스터 성격 테스트 - HBTI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>당신은 어떤 햄스터인가요?</h1>
+
+    <!-- 시작 화면 -->
+    <div id="start-screen">
+      <div id="start-hamsters" style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
+  <img src="img/ham.jpg" alt="햄찌" style="width: 480px;">
+</div>
+
+      <button id="start-btn">테스트 시작하기</button>
+  
+    </div>
+
+    <!-- 질문 화면 -->
+    <div id="quiz-screen" style="display: none;">
+      <div id="question-box">
+        <p id="question-text"></p>
+        <button id="btn-a1"></button>
+        <button id="btn-a2"></button>
+      </div>
+    </div>
+
+    <!-- 결과 화면 -->
+    <div id="result-screen" style="display: none;">
+      <p id="result-desc"></p>
+      <img id="result-img" src="" alt="햄찌 이미지" style="width:500px;">
+      <p id="result-type"></p>
+
+      <div class="match-hamsters">
+  <!-- 찰떡궁합 -->
+  <div class="match-block">
+    <h2>💖 찰떡궁합 햄찌</h2>
+    <img id="match-good-img" class="match-img" src="" />
+    <p id="match-good-name"></p>
+  </div>
+
+  <!-- 티격태격 -->
+  <div class="match-block">
+    <h2>💢 티격태격 햄찌</h2>
+    <img id="match-bad-img" class="match-img" src="" />
+    <p id="match-bad-name"></p>
+  </div>
+</div>
+
+      <div class="bar-group">
+  <label>E / I</label>
+  <div class="bar-container">
+    <div class="bar e-bar"></div>
+    <div class="bar i-bar"></div>
+  </div>
+  <div class="percent-text">
+    <span class="e-percent">E: 0%</span> | <span class="i-percent">I: 0%</span>
+  </div>
+</div>
+
+<div class="bar-group">
+  <label>S / N</label>
+  <div class="bar-container">
+    <div class="bar s-bar"></div>
+    <div class="bar n-bar"></div>
+  </div>
+  <div class="percent-text">
+    <span class="s-percent">S: 0%</span> | <span class="n-percent">N: 0%</span>
+  </div>
+</div>
+
+<div class="bar-group">
+  <label>T / F</label>
+  <div class="bar-container">
+    <div class="bar t-bar"></div>
+    <div class="bar f-bar"></div>
+  </div>
+  <div class="percent-text">
+    <span class="t-percent">T: 0%</span> | <span class="f-percent">F: 0%</span>
+  </div>
+</div>
+
+<div class="bar-group">
+  <label>J / P</label>
+  <div class="bar-container">
+    <div class="bar j-bar"></div>
+    <div class="bar p-bar"></div>
+  </div>
+  <div class="percent-text">
+    <span class="p-percent">P: 0%</span> | <span class="j-percent">J: 0%</span>
+  </div>
+</div>
+<button id="restart-btn">다시 테스트하기</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
